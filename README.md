@@ -162,3 +162,8 @@ This repository documents one observed case and its recovery procedure. The exac
 WSAEACCES, error 10013, WFP, Windows Filtering Platform,
 ProtonVPN split tunneling, Mihomo, Clash core, com.vortex.helper.exe,
 分流失败, 代理被阻断, VPN连接后代理进程失联
+Acknowledgments / 致谢
+
+Investigation and testing were performed by the repository author, with assistance from AI tools (ChatGPT/Codex and Claude) for troubleshooting suggestions, log analysis, and documentation review.
+
+本案例的实际操作与测试由仓库作者完成，ChatGPT/Codex 和 Claude 协助提供排查建议、日志分析及文档整理。
