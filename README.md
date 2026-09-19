@@ -143,3 +143,22 @@ The confirmed observations are:
 This may indicate an edge case involving split-tunnel rule application and process lifetime, but further testing would be required to confirm the exact cause.
 
 I can provide the full WFP filter export, Event ID `5157` records, and additional logs if useful.
+Search keywords / 检索关键词
+
+English: Proton VPN, ProtonVPN, split tunneling, exclude mode, WFP, Windows Filtering Platform, WSAEACCES, Windows socket error 10013, Mihomo, Clash, WireGuard UDP, com.vortex.helper.exe, ProtonVPN block IPv4.
+
+中文： Proton VPN 分流失败、分流排除不生效、代理被阻断、Windows 网络错误 10013、套接字访问被拒绝、WFP 防火墙规则、Clash 与 Proton VPN 冲突、Mihomo 代理连接失败。
+
+Related symptoms / 相关症状：
+
+A third-party proxy process may receive WSAEACCES 10013 after connecting Proton VPN, even when the process has been added to the split tunneling exclusion list.
+
+第三方代理进程即使已经加入 Proton VPN 分流排除列表，连接 VPN 后仍可能出现 10013 错误，导致代理无法正常连接。
+
+This repository documents one observed case and its recovery procedure. The exact root cause has not been confirmed.
+
+本仓库记录的是一次实际遇到的故障及恢复过程，尚未确认最终根因。
+## Related terms / Search keywords
+WSAEACCES, error 10013, WFP, Windows Filtering Platform,
+ProtonVPN split tunneling, Mihomo, Clash core, com.vortex.helper.exe,
+分流失败, 代理被阻断, VPN连接后代理进程失联
