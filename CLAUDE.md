@@ -14,4 +14,3 @@ There are no build, lint, or test commands — changes are edits to `README.md` 
 
 - Preserve the bilingual (English/Chinese) sections; keep both languages in sync if updating either.
 - Keep the distinction between confirmed observations (exact error codes, WFP event IDs, filter names) and speculative interpretation.
-- WFP `FilterRTID` values are noted as unstable across sessions — don't treat specific runtime IDs as stable identifiers.
