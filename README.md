@@ -193,7 +193,7 @@ The older export (`wfp_filters.xml`) contains `v5.1.5` in four executable paths 
 
 ### What this does and does not show
 
-- With Kill Switch off, getting stuck at "Connecting" happened **without any Proton WFP filter present**. That instance of the hang is therefore not explained by WFP blocking; it looks more like the connection itself not completing, which fits Proton support's statement that connections from mainland China are increasingly blocked (hostnames first, IP addresses more recently).
+- With Kill Switch off, getting stuck at "Connecting" happened **without any Proton WFP filter present**. That instance of the hang is therefore not explained by WFP blocking; it looks more like the connection itself not completing. Proton support has said that connections from mainland China are increasingly blocked (hostnames first, IP addresses more recently); that is support's explanation, not something verified independently here.
 - The "permit paths point at an old version" idea is **neither confirmed nor ruled out**. With Kill Switch off there were no block or permit filters to inspect, so this capture could not test it. Testing it would need a dump taken while the Kill Switch is on and the client is stuck.
 - Whether Kill Switch was on during the original 10013 failures above is not recorded here.
 
@@ -243,7 +243,7 @@ Practical workaround observed: after editing the split tunneling list, disconnec
 
 ### Support-side notes
 
-- Proton support stated that mainland China blocks Proton VPN hostnames and has more recently started blocking IP addresses, which may explain why some servers are unreachable while others (for example certain US ones) still connect.
+- Proton support stated that mainland China blocks Proton VPN hostnames and has more recently started blocking IP addresses. This is support's feedback and has **not been verified independently** here; it may explain why some servers are unreachable while others (for example certain US ones) still connect.
 - A bug report with logs was submitted from the Windows client. The first attempt failed to send, presumably because Proton's servers were unreachable; it succeeded on retry through another proxy.
 
 ---
